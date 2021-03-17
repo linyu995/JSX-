@@ -1,10 +1,13 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <HelloWorld></HelloWorld>
 </template>
+<script>
+  import HelloWorld from "../src/components/HelloWorld";
+  export default {
+    components: {HelloWorld}
+  }
+
+</script>
 
 <style lang="less">
 #app {
